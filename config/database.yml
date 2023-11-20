@@ -57,7 +57,7 @@ test:
   <<: *default
   database: budget_app_test
   username: postgres
-  password: 123456@
+  password: new_password
   host: localhost
   port: 5432
 
