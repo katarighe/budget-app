@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
     @group = current_user.groups.new(group_params)
     if @group.save
       flash[:success] = 'Category created successfully!'
-      redirect_to groups_path
+      redirect_to group_purchases_path(@group)
     else
       flash.now[:error] = @group.errors.full_messages.to_sentence
       render :new
