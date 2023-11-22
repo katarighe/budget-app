@@ -11,12 +11,12 @@ class GroupsController < ApplicationController
 
   def create
     @group = current_user.groups.new(group_params)
-    if @group.save!
+    if @group.save
       flash[:success] = 'Category created successfully!'
       redirect_to group_purchases_path(@group)
     else
-      flash.now[:notice] = 'Something went wrong!'
-      render :new, locals: { group: @group }
+      flash.now[:error] = @group.errors.full_messages.to_sentence
+      render :new
     end
   end
 
