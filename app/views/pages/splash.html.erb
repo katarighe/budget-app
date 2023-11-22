@@ -2,10 +2,6 @@
   <section class="wallpaper">
     <h1>SmartPocket Budget</h1>
   </section>
-  
-  <% flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, class: name %>
-  <% end -%>
 
   <section>
     <%= link_to "log in", new_user_session_path, data: { turbo: false } %>
