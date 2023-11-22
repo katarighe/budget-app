@@ -16,13 +16,13 @@ class PurchasesController < ApplicationController
     @purchase = current_user.purchases.new(purchase_params.except(:group_ids))
     @groups = Group.where(id: purchase_params[:group_ids])
     if @groups.empty?
-      flash.now[:error] = 'You must choose at least one category!'
+      flash.now[:error] = 'Please choose at least one category!'
       render :new
     elsif @purchase.save
       @groups.each do |group|
         group.purchases << @purchase
       end
-      flash[:success] = "Transaction was created and added to #{@groups.length} goups!"
+      flash[:success] = "Transaction was created and added to #{@groups.length} groups!"
       redirect_to group_purchases_path(params[:group_id])
     else
       flash.now[:error] = @purchase.errors.full_messages.to_sentence
@@ -38,7 +38,7 @@ class PurchasesController < ApplicationController
     @purchase = Purchase.find(params[:id])
     @groups = Group.where(id: purchase_params[:group_ids])
     if @groups.empty?
-      flash.now[:error] = 'You must choose at least one category!'
+      flash.now[:error] = 'Please choose at least one category!'
       render :edit
     elsif @purchase.update(purchase_params.except(:group_ids))
       @purchase.groups.delete_all
