@@ -20,21 +20,30 @@ class GroupsController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit
+    @group = Group.find(params[:id])
+  end
 
-  def update; end
+  def update
+    @group = Group.find(params[:id])
+    if @group.update(group_params)
+      flash[:success] = 'Category updated successfully!'
+      redirect_to group_purchases_path(@group)
+    else
+      flash.now[:error] = @group.errors.full_messages.to_sentence
+      render :edit
+    end
+  end
 
   def destroy
-    @group = Group.find_by(id: params[:id])
-
-    if @group.nil?
-      flash[:error] = 'Category not found or already deleted.'
+    @group = Group.find(params[:id])
+    if @group.destroy
+      flash[:success] = 'Category was deleted successfully!'
+      redirect_to groups_url
     else
-      @group.destroy
-      flash[:success] = 'Category has been successfully deleted!'
+      flash[:error] = @group.errors.full_messages.to_sentence
+      render :index
     end
-
-    redirect_to groups_url
   end
 
   def group_params
