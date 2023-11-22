@@ -26,7 +26,7 @@
 
   <% if @purchases.empty? %>
     <div class="empty">
-      <p>Group has currently no transactions.</p>
+      <p>Group has currently no transactions. Please add one to continue.</p>
     </div>
   <% end %>
 
@@ -55,7 +55,7 @@
     <% end %>
   </ul>
   <div class="item checkout">
-    <span class="name">total expences:</span>
+    <span class="name">Total expenses:</span>
     <span class="amount">$<%= total_amount(@group)%></span>
   </div>
 </main>
