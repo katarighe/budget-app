@@ -12,9 +12,9 @@ user1 = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret'
 user2 = User.create(name: 'Alan', email: 'alan@example.com', password: 'topsecret')
 user3 = User.create(name: 'Lily', email: 'lily@example.com', password: 'topsecret')
 
-group1 = Group.create(user: user1, name: 'Lunches', icon: 'missing_avatar.png')
-group2 = Group.create(user: user1, name: 'Cosmetics', icon: 'missing_avatar.png')
-group3 = Group.create(user: user1, name: 'Clothes', icon: 'missing_avatar.png')
+group1 = Group.create(user: user1, name: 'Lunches', icon: 'https://i.pravatar.cc/300?img=1')
+group2 = Group.create(user: user1, name: 'Cosmetics', icon: 'https://i.pravatar.cc/300?img=2')
+group3 = Group.create(user: user1, name: 'Clothes', icon: 'https://i.pravatar.cc/300?img=3')
 
 purchase1 = Purchase.create(author: user1, name: 'Cream', amount: 10)
 purchase2 = Purchase.create(author: user1, name: 'Shempoo', amount: 20)
