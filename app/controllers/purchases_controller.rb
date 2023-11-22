@@ -22,7 +22,7 @@ class PurchasesController < ApplicationController
       @groups.each do |group|
         group.purchases << @purchase
       end
-      flash[:success] = "Transaction was created and added to #{@groups.length} groups!"
+      flash[:success] = "Transaction was created and added to Group #{@groups.length}!"
       redirect_to group_purchases_path(params[:group_id])
     else
       flash.now[:error] = @purchase.errors.full_messages.to_sentence
@@ -41,12 +41,11 @@ class PurchasesController < ApplicationController
       flash.now[:error] = 'Please choose at least one category!'
       render :edit
     elsif @purchase.update(purchase_params.except(:group_ids))
-      @purchase.groups.delete_all
       @groups.each do |group|
         group.purchases << @purchase unless group.purchases.include?(@purchase)
       end
-      flash[:succes] = 'Transaction updated successfully!'
-      redirect_to group_purchases_path(params[:group_id])
+      flash[:success] = 'Transaction has been updated successfully!'
+      redirect_to group_purchase_path(params[:group_id], params[:id])
     else
       flash.now[:error] = @purchase.errors.full_messages.to_sentence
       render :edit
@@ -56,7 +55,7 @@ class PurchasesController < ApplicationController
   def destroy
     @purchase = Purchase.find(params[:id])
     if @purchase.destroy
-      flash[:success] = 'Transaction was deleted successfully!'
+      flash[:success] = 'Transaction has been deleted successfully!'
       redirect_to group_purchases_url(params[:group_id])
     else
       flash.now[:error] = @purchase.errors.full_messages.to_sentence
