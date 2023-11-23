@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'open new groups page', type: :feature do
+RSpec.describe 'when opening the new groups page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
     @user.confirm
@@ -52,8 +52,8 @@ RSpec.describe 'open new groups page', type: :feature do
     end
   end
 
-  context 'click on a Add Category button without filling the form' do
-    it 'renders new page again' do
+  context 'clicks on a add category button without filling the form' do
+    it 'renders the new page again' do
       click_button('add category')
       expect(page).to have_content('new category')
       expect(page).to have_button('add category', type: 'submit')

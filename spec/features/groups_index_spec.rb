@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'open group\'s index page', type: :feature do
+RSpec.describe 'when open the group\'s index page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
     @user.confirm
@@ -44,7 +44,7 @@ RSpec.describe 'open group\'s index page', type: :feature do
     expect(page).to have_link('add category', href: new_group_path)
   end
 
-  context 'click on a group name' do
+  context 'clicks on a group name' do
     it 'redirects to that group\'s transactions page' do
       click_link('Food')
       expect(page).to have_current_path(group_purchases_path(@group1))
@@ -56,7 +56,7 @@ RSpec.describe 'open group\'s index page', type: :feature do
     end
   end
 
-  context 'click on a add group button' do
+  context 'clicks on a add group button' do
     it 'redirects to form that adds new group' do
       click_link('add category')
       expect(page).to have_current_path(new_group_path)

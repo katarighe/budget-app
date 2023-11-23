@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'open group\'s edit page', type: :feature do
+RSpec.describe 'when opening the group\'s edit page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
     @user.confirm
@@ -36,7 +36,7 @@ RSpec.describe 'open group\'s edit page', type: :feature do
     end
   end
 
-  context 'fills the fields and click on update button' do
+  context 'fills in the fields and click on update button' do
     before(:each) do
       fill_in 'Name', with: 'Meals'
       fill_in 'Icon', with: 'https://i.pravatar.cc/300?img=6'
