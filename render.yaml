@@ -1,7 +1,7 @@
 databases:
   - name: micronaut
-    databaseName: micronaut_k76m
-    user: micronaut_k76m_user
+    databaseName: micronaut_s7x7
+    user: micronaut_s7x7_user
 
 services:
   - type: web
