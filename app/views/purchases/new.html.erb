@@ -14,19 +14,19 @@
   
   <%= form_with(url: group_purchases_path, model: @purchase, class: "form") do |f| %>
     <div class="field">
-      <%= f.label :name, "Name" %>
+      <%= f.label :name, "name" %>
       <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Bodyshop cream" %>
     </div>
 
     <div class="field">
-      <%= f.label :amount, "Amount, $" %>
+      <%= f.label :amount, "amount, $" %>
       <%= f.text_field :amount, autofocus: true, autocomplete: "amount", placeholder: "15" %>
     </div>
 
     <div class="checkbox">
       <%= f.label :amount, "categories", class: "categories_label" %><br />
       <%= f.collection_check_boxes :group_ids, current_user.groups, :id, :name, :include_hidden => false %>
-      <span>No mathing category?</span>
+      <span>No matching category?</span>
       <%= link_to "add a new category", new_group_path, data: { turbo: false }, class: "static"  %>
     </div>
 
