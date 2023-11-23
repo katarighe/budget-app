@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Budget App</b></h1>
+  <h1><b>SmarPocket Budget App</b></h1>
 
 </div>
 
@@ -28,29 +28,48 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Budget On Rails <a name="about-project"></a>
+# 📖 SmartPocket Budget <a name="about-project"></a>
 
-**Budget App** A budget app used to manage information on food, recipe and shopping list.
+A budget app named **SmartPocket Budget** keeps track of all your expences associated with categories. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Server</summary>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-    <li><a href="https://rubyonrails.org/">Rails</a></li>
-</details>
-<details>
-  <summary>Database</summary>
-    <li><a href="https://www.postgresql.org/">Postgres</a></li>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript">JavaScript</a></li>
+  </ul>
 </details>
 
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Built using Ruby on Rails**
+The main features include:
+
+- Create new transactions to track your expenses.
+- Update or delete existing transactions.
+- Create new categories to classify your expenses by category.
+- View the calculated total amount of expenses per category.
+- Update or delete existing categories.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,27 +133,21 @@ to run tests:
 - Twitter: [@katarighe](https://twitter.com/katarighe)
 - LinkedIn: [@mighe](https://linkedin.com/in/mighe)
 
-👤 **Sodeeq Awoyemi**
-
-- GitHub: [@githubhandle](https://github.com/Errytagedesign)
-- Twitter: [@twitterhandle](https://twitter.com/errytage)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/errytagedesigns/)
-
-👤 **Abdul Wahab Hussain**
-
-- GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
-- Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add Events**
-- **Add Calories**
-- **Add Relevant Nutrition Facts**
+Here are some future features that could be added to the Budget app in the future.
+
+- **Add Transactions & Animations**
+- **Introduce a Desktop version**
+- **Improve the overall UX / UI design**
+
+These are just a few ideas for future features that could be added to the Budget app. 
+
+The specific features that are added will depend on the needs and wants of the users.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,6 +175,8 @@ Give a star⭐️ or a thumbs up 👍 if you like this project! You can visit my
 
 - Project supervised by [Microverse](https://www.microverse.org/)
 - [Creative Commons 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/)
+- Original design theme is by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+- [Link to the original design theme](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding) by Gregoire Vella
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
