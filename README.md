@@ -1,9 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h1><b>SmarPocket Budget App</b></h1>
-
+  <h1><b>SmartPocket Budget App</b></h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -14,6 +12,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -30,7 +29,7 @@
 
 # 📖 SmartPocket Budget <a name="about-project"></a>
 
-A budget app named **SmartPocket Budget** keeps track of all your expences associated with categories. 
+A budget app named **SmartPocket Budget** keeps track of all your expenses associated with categories. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,6 +69,13 @@ The main features include:
 - Create new categories to classify your expenses by category.
 - View the calculated total amount of expenses per category.
 - Update or delete existing categories.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- The Live Demo is available [here](https://budget-app-trxc.onrender.com)
+- Video of the app is available [here](https://www.loom.com/share/25cd395985e94de5aae700c872a7fa5d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
