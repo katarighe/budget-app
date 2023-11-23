@@ -74,7 +74,7 @@ The main features include:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- The Live Demo is available [here](https://budget-app-trxc.onrender.com)
+- The Live Demo is available [here](https://moyen-budget.onrender.com/)
 - Video of the app is available [here](https://www.loom.com/share/1d91c95ca961496cb673ad326cb1859f)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
