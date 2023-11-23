@@ -1,9 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
   <h1><b>SmartPocket Budget App</b></h1>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -60,7 +58,6 @@ A budget app named **SmartPocket Budget** keeps track of all your expenses assoc
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
