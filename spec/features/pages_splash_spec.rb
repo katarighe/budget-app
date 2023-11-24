@@ -50,7 +50,6 @@ RSpec.describe 'when open the webpage for the first time', type: :feature do
   context 'when signing up with the valid attributes' do
     before(:each) do
       @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
-      @user.confirm
       visit new_user_session_path
 
       fill_in 'Email', with: 'tom@example.com'
