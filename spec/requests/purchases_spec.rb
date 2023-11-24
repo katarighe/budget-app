@@ -8,7 +8,6 @@ RSpec.describe 'Purchases', type: :request do
 
   before :each do
     @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
-    @user.confirm
     login(@user)
   end
 

@@ -3,8 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Pages', type: :request do
   before :each do
     user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
-    user.confirm
-    login(user)
+    login(@user)
   end
 
   context 'GET /splash' do
