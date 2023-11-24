@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'when opening the purchase details page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
-    
+
     visit new_user_session_path
     fill_in 'Email', with: 'tom@example.com'
     fill_in 'Password', with: 'topsecret'
