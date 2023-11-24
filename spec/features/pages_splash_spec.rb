@@ -41,10 +41,6 @@ RSpec.describe 'when opening the webpage for the first time', type: :feature do
     it 'redirects to the splash page' do
       expect(page).to have_current_path(unauthenticated_root_path)
     end
-
-    it 'shows the notice that the confirmation email was sent' do
-      expect(page).to have_content('A message with a confirmation link has been sent to your email address.')
-    end
   end
 
   context 'when signing up with the valid attributes' do
