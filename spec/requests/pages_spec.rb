@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Pages', type: :request do
   before :each do
-    user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
+    @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
     login(@user)
   end
 
