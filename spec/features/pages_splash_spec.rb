@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'when open the webpage for the first time', type: :feature do
+RSpec.describe 'when opening the webpage for the first time', type: :feature do
   before(:each) do
     visit unauthenticated_root_path
   end
@@ -42,7 +42,7 @@ RSpec.describe 'when open the webpage for the first time', type: :feature do
       expect(page).to have_current_path(unauthenticated_root_path)
     end
 
-    it 'shows the notice that the email confirmation letter was sent' do
+    it 'notifies the user that the confirmation email was sent' do
       expect(page).to have_content('A message with a confirmation link has been sent to your email address.')
     end
   end

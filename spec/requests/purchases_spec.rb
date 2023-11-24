@@ -62,7 +62,7 @@ RSpec.describe 'Purchases', type: :request do
     end
 
     it 'renders the right placeholder' do
-      expect(response.body).to include('<h1>New transaction</h1>')
+      expect(response.body).to include('<h1>New Transaction</h1>')
     end
   end
 
