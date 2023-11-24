@@ -18,7 +18,7 @@ RSpec.describe 'when opening the purchase details page', type: :feature do
 
   context 'shows the right content' do
     it 'heading' do
-      expect(page).to have_content('details')
+      expect(page).to have_content('Purchase Details')
     end
 
     it 'name of the purchase' do
