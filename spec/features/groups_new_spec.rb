@@ -17,7 +17,7 @@ RSpec.describe 'when opening the new groups page', type: :feature do
   end
   context 'shows the correct' do
     it 'heading' do
-      expect(page).to have_content('new category')
+      expect(page).to have_content('New Category')
     end
 
     it 'labels' do
@@ -54,7 +54,7 @@ RSpec.describe 'when opening the new groups page', type: :feature do
   context 'clicks on a add category button without filling the form' do
     it 'renders the new page again' do
       click_button('add category')
-      expect(page).to have_content('new category')
+      expect(page).to have_content('New Category')
       expect(page).to have_button('add category', type: 'submit')
     end
 

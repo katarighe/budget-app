@@ -18,7 +18,7 @@ RSpec.describe 'when opening the purchase new page', type: :feature do
 
   context 'shows the correct' do
     it 'heading' do
-      expect(page).to have_content('new transaction')
+      expect(page).to have_content('New Transaction')
     end
 
     it 'labels' do
@@ -71,13 +71,13 @@ RSpec.describe 'when opening the purchase new page', type: :feature do
   context 'clicking on a add transaction button without filling the form' do
     it 'renders new page again' do
       click_button('add transaction')
-      expect(page).to have_content('new transaction')
+      expect(page).to have_content('New Transaction')
       expect(page).to have_button('add transaction', type: 'submit')
     end
 
     it 'shows an error message' do
       click_button('add transaction')
-      expect(page).to have_content('You must choose at least one category!')
+      expect(page).to have_content('Please choose at least one category!')
     end
   end
 end

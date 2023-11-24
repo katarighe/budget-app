@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'when open the group\'s index page', type: :feature do
+RSpec.describe 'when opening the group\'s index page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Tom', email: 'tom@example.com', password: 'topsecret')
 
@@ -17,7 +17,7 @@ RSpec.describe 'when open the group\'s index page', type: :feature do
   end
 
   it 'shows the correct heading' do
-    expect(page).to have_content('categories')
+    expect(page).to have_content('Categories')
   end
 
   it 'shows the names of each group' do
