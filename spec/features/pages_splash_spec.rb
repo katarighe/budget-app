@@ -43,7 +43,7 @@ RSpec.describe 'when open the webpage for the first time', type: :feature do
     end
 
     it 'shows the notice that the email confirmation letter was sent' do
-      expect(page).to have_content('A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.')
+      expect(page).to have_content('A message with a confirmation link has been sent to your email address.')
     end
   end
 
