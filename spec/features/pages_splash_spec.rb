@@ -42,7 +42,7 @@ RSpec.describe 'when opening the webpage for the first time', type: :feature do
       expect(page).to have_current_path(unauthenticated_root_path)
     end
 
-    it 'notifies the user that the confirmation email was sent' do
+    it 'shows the notice that the confirmation email was sent' do
       expect(page).to have_content('A message with a confirmation link has been sent to your email address.')
     end
   end
